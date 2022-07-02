@@ -111,7 +111,9 @@ add_subdirectory(src)
 # build fluid
 #######################################################################
 
-add_subdirectory(fluid)
+if (FLTK_BUILD_FLUID)
+  add_subdirectory(fluid)
+endif (FLTK_BUILD_FLUID)
 
 #######################################################################
 # variables shared by export and install

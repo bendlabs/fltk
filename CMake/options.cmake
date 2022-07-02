@@ -279,8 +279,9 @@ option (OPTION_BUILD_SHARED_LIBS
 option (OPTION_PRINT_SUPPORT "allow print support" ON)
 option (OPTION_FILESYSTEM_SUPPORT "allow file system support" ON)
 
-option (FLTK_BUILD_TEST     "Build test/demo programs" ON)
+option (FLTK_BUILD_TEST     "Build test/demo programs" OFF)
 option (FLTK_BUILD_EXAMPLES "Build example programs"   OFF)
+option (FLTK_BUILD_FLUID    "Build FLUID" OFF)
 
 if (DEFINED OPTION_BUILD_EXAMPLES)
   message (WARNING
